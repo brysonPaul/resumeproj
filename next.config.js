@@ -3,16 +3,15 @@
 */
 const isProd = process.env.NODE_ENV === 'production';
 
-module.exports = {
-  // For deployment to GitHub Pages
-  assetPrefix: isProd ? '/resumeproj/' : '',
-  basePath: isProd ? '/resumeproj' : '',
-};
+
 const nextConfig = {
+  output: 'export',
   images: {
     loader: 'akamai',
     path: '',
   },
-  assetPrefix: './',
+  assetPrefix: isProd ? '/resumeproj/' : '',
+  basePath: isProd ? '/resumeproj' : '',
 };
 
+module.exports = nextConfig;
