@@ -1,5 +1,6 @@
 
 // app/layout.tsx
+import "./globals.css";
 import {Providers} from "./providers";
 export const metadata = {
   title: 'Brysons Website',
