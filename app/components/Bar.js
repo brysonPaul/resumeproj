@@ -10,7 +10,7 @@ export default function Bar() {
     <Navbar isBordered isBlurred={false}>
       <NavbarContent className="hidden sm:flex gap-4 justify-start" justify="start">
         <NavbarItem>
-          <Link color="foreground" href="/">
+          <Link color="foreground" href="">
             Home
           </Link>
         </NavbarItem>
