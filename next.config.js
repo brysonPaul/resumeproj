@@ -5,8 +5,8 @@ const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
   // For deployment to GitHub Pages
-  assetPrefix: isProd ? '/my-next-app/' : '',
-  basePath: isProd ? '/my-next-app' : '',
+  assetPrefix: isProd ? '/resumeproj/' : '',
+  basePath: isProd ? '/resumeproj' : '',
 };
 const nextConfig = {
   images: {
