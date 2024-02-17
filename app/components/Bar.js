@@ -15,22 +15,22 @@ export default function Bar() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="about">
+          <Link color="foreground" href="/about">
             About Me
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="experiences">
+          <Link color="foreground" href="/experiences">
             Experiences
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="projects">
+          <Link color="foreground" href="/projects">
             Projects
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="keyboards">
+          <Link color="foreground" href="/keyboards">
             Keyboards
           </Link>
         </NavbarItem>
