@@ -17,6 +17,11 @@
     width: 600px;
   }
 
+  .footertext {
+    font-size: 20px;
+    padding: 10px
+  }
+
   .icon-links {
     /* color: lightskyblue; */
     font-size: 25px;

@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 function About() {
   return (
-    <main style={{ flex: "flex-grow", height:"200%" }}>
+    <main style={{ minHeight:"200%" }}>
 
       <p className="title">About me</p>
       <div className="flex flex-row" style={{ width: "100%", marginLeft: "5%", justifyContent: "flex-start" }}>

@@ -9,7 +9,7 @@ const nextConfig = {
   images: {
     loader: 'akamai',
     unoptimized: true,
-    path: '',
+    path: '/resumeproj/',
   },
   assetPrefix: isProd ? '/resumeproj/' : '',
   basePath: isProd ? '/resumeproj' : '',
