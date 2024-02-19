@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
-import Resume from "../images/Resume.pdf";
+//import Resume from "../images/Resume.pdf";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
