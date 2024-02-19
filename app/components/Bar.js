@@ -44,9 +44,9 @@ export default function Bar() {
         <a className="icon-links flex flex-col" href="https://www.linkedin.com/in/bryson-paul/">
           <FontAwesomeIcon icon={faLinkedinIn} title="View my LinkedIn"/>
         </a>
-        <a className="icon-links" href={Resume} target="_blank" rel="noopener noreferrer" type="application/pdf" style={{width:"20px"}}>
+        {/* <a className="icon-links" href={Resume} target="_blank" rel="noopener noreferrer" type="application/pdf" style={{width:"20px"}}>
           <FontAwesomeIcon icon={faFile} title="View my Resume"/>
-        </a>
+        </a> */}
         <a className="icon-links" href="mailto:brysonpaul1870@gmail.com" target="_blank" rel="noopener noreferrer" type="application/pdf">
           <FontAwesomeIcon icon={faEnvelope} title="Send me an email!"/>
         </a>
