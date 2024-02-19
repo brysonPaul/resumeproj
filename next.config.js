@@ -11,5 +11,5 @@ module.exports = {
     path: '/resumeproj/',
   },
   assetPrefix:'/resumeproj/',
-  basePath: '/resumeproj',
+  basePath: '/resumeproj/',
 };
