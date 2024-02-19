@@ -11,8 +11,8 @@ const nextConfig = {
     unoptimized: true,
     path: '/resumeproj/',
   },
-  assetPrefix: isProd ? '/resumeproj/' : '',
-  basePath: isProd ? '/resumeproj' : '',
+  assetPrefix:'/resumeproj/',
+  basePath: '/resumeproj',
 };
 
 module.exports = nextConfig;
