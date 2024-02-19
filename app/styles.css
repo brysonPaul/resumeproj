@@ -1,0 +1,46 @@
+.left-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .left-nav .flex-gap-20 {
+    /* Optional: Remove gap between navbar items */
+    gap: 0;
+  }
+  .photo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 100px;
+    padding: 40px;
+    max-width: 100%;
+    width: 600px;
+  }
+
+  .icon-links {
+    /* color: lightskyblue; */
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+  }
+  
+  .title {
+    font-size: 500%;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-style: normal;
+  }
+  
+  .pgText {
+    width: 50%;
+    font-size: 200%;
+    align-items: flex-start;
+    margin-left: 15%;
+    margin-top: 4%;
+  }
+  
+  .main {
+    flex: flex-grow;
+  }
