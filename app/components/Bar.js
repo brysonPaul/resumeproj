@@ -12,7 +12,7 @@ export default function Bar() {
     <Navbar isBordered isBlurred={false} variant="sticky" style={{ width: "100%", backgroundColor: "" }}>
       <NavbarContent style={{ width: "1%", display: "flex", justifyContent: "space-around", flexGrow: 1, gap:75 }}>
         <NavbarItem>
-          <Link color="foreground" href="/" size="lg">
+          <Link color="foreground" href= {isProd? "/resumeproj/" :"/"} size="lg">
             Home
           </Link>
         </NavbarItem>
