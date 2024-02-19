@@ -3,8 +3,7 @@
 */
 const isProd = process.env.NODE_ENV === 'production';
 
-
-const nextConfig = {
+module.exports = {
   output: 'export',
   images: {
     loader: 'akamai',
@@ -14,5 +13,3 @@ const nextConfig = {
   assetPrefix:'/resumeproj/',
   basePath: '/resumeproj',
 };
-
-module.exports = nextConfig;
