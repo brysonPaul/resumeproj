@@ -8,8 +8,8 @@ module.exports = {
   images: {
     loader: 'akamai',
     unoptimized: true,
-    path: '/resumeproj/',
+    path: isProd ? '/resumeproj/':'',
   },
-  assetPrefix:'/resumeproj/',
-  basePath: '/resumeproj',
+  assetPrefix: isProd ? '/resumeproj/':'',
+  basePath: isProd ? '/resumeproj':'',
 };
