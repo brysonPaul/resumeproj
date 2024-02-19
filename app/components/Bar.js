@@ -1,6 +1,5 @@
 import React from "react";
 import { Navbar, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
-//import Resume from "../images/Resume.pdf";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
@@ -44,9 +43,9 @@ export default function Bar() {
         <a className="icon-links flex flex-col" href="https://www.linkedin.com/in/bryson-paul/">
           <FontAwesomeIcon icon={faLinkedinIn} title="View my LinkedIn"/>
         </a>
-        {/* <a className="icon-links" href={Resume} target="_blank" rel="noopener noreferrer" type="application/pdf" style={{width:"20px"}}>
+        <a className="icon-links flex flex-col" href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFile} title="View my Resume"/>
-        </a> */}
+        </a>
         <a className="icon-links" href="mailto:brysonpaul1870@gmail.com" target="_blank" rel="noopener noreferrer" type="application/pdf">
           <FontAwesomeIcon icon={faEnvelope} title="Send me an email!"/>
         </a>
