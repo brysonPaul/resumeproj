@@ -18,7 +18,7 @@ function About() {
         <div className="left">
 
           <p className="pgText">
-            I've been programming since I was in freshman year of high school, and since then I have been captivated. Like many, the notion of programming video games was my first inlet to the craft, but I was soon captivated by the freedom and euphoria that programming gave me. Ever since, I have been honing my craft to get to the point I am today. But this thirst for knowledge will always be a lifetime goal for me.
+            I`ve been programming since I was in freshman year of high school, and since then I have been captivated. Like many, the notion of programming video games was my first inlet to the craft, but I was soon captivated by the freedom and euphoria that programming gave me. Ever since, I have been honing my craft to get to the point I am today. But this thirst for knowledge will always be a lifetime goal for me.
           </p>
         </div>
 

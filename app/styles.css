@@ -12,6 +12,11 @@
     max-width: 100%;
     width: 70%;
   }
+  .keeb-photo {
+    border-radius: 100px;
+    max-width: 100%;
+    width: 60%;
+  }
 
   .footertext {
     font-size: 20px;
@@ -54,6 +59,24 @@
     text-align: center;
     font-weight: 100;
   }
+
+  .embla {
+    margin-top: 6%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .embla__container {
+    display: flex;
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+  }
   
   .pgText {
     width: 80%;
@@ -67,7 +90,6 @@
       flex-direction: column;
     }
   }
-
 
   .main {
     flex: flex-grow;
