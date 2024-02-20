@@ -1,12 +1,12 @@
 import React from "react";
-import "./styles.css"; // Import your CSS file
+import "../styles.css"; // Import your CSS file
 
 export default function Home() {
   return (
       <main  style={{minHeight:"75vh"}}>
       
       <p className="title">  Bryson Paul - Software Engineer</p>
-        <p className="pgText left">Welcome to my website! Feel free to navigate to my other tabs to learn a bit more about who I am!</p>
+        <p className="pgText">Welcome to my website! Feel free to navigate to my other tabs to learn a bit more about who I am!</p>
         </main>
   );
 }

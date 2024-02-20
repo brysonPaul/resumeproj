@@ -26,6 +26,18 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+html {
+  background-color: #fff; /* Light mode background */
+  color: #1b1029; /* Light mode text */
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #1b1029; /* Dark mode background */
+    color: #fff; /* Dark mode text */
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

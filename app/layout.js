@@ -16,8 +16,8 @@ import Footer from "./components/Footer";
 
 export default function RootLayout({children}) {
   return (
-    <html lang="en" className="dark {lato.className}">
-      <body>
+    <html lang="en" className="dark" >
+      <body className="dark">
         <Providers lato = {lato}>
           <Bar/>
           {children}

@@ -15,8 +15,9 @@ module.exports = {
       'cyan': '#084a58',
       'brown': '#7f552f',
       'tan': '#dfceb2',
-      
+      'ff': '#1b1029'
     },
+
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
