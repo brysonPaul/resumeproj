@@ -7,8 +7,8 @@ module.exports = {
   images: {
     loader: 'akamai',
     unoptimized: true,
-    path: '',
+    path: '/',
   },
-  assetPrefix:'',
+  assetPrefix:'/',
   basePath:'',
 };
