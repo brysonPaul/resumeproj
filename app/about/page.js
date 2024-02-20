@@ -2,13 +2,8 @@ import React from "react";
 import "../styles.css"; // Import your CSS file
 import Image from 'next/image';
 
-function addProd(isProd, src) {
-  return (isProd ? "/resumeproj" : " ") + src;
-
-}
 
 function About() {
-  const isProd = process.env.NODE_ENV === 'production';
   return (
 
     <div style={{width:"100%"}}>
@@ -25,7 +20,7 @@ function About() {
         <div className="right">
           <Image
             className="photo"
-            src={addProd(isProd, "/IMG-4372.jpg")}
+            src={"/IMG-4372.jpg"}
             alt="Thats me taking a photo at Google during the end of my second internship"
             width={300}
             height={500}
@@ -43,7 +38,7 @@ function About() {
         <div className="left">
           <Image
             className="photo"
-            src={addProd(isProd, "/breck.jpg")}
+            src={"/breck.jpg"}
             alt="A beautiful view of Breckenridge I took my first time skiing"
             width={300}
             height={500}

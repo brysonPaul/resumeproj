@@ -6,15 +6,11 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import Link from "next/link";
 
-const isProd = process.env.NODE_ENV === 'production';
-function addProd(isProd, src) {
-  return (isProd ? "/resumeproj" : " ") + src;
-}
 
-const boards = [{ name: 'Clay Derivative', designer: "jjw", switches: 'Lubed Cherry Nixies with 62g springs', keycaps: 'GMK Earth Tones', mount: "O-Ring", photo:addProd(isProd,"/derivative.jpg") },
-{ name: 'Navy Onyx FRL TKL', designer: 'funderbunker', switches: 'Lubed Gateron Cream Sodas', keycaps: 'GMK Stargaze', mount: "Gasket", photo:addProd(isProd,"/onyx.jpg") },
-{ name: 'Dolice', designer: 'TGR x LinWorks', switches: 'Broken in + Lubed Cherry Nixies with 62g springs ', keycaps: 'GMK Rainy Day', mount: "Sandwich", photo:addProd(isProd,"/dolice.jpg") },
-{ name: 'QK65', designer: 'qwertykeys', switches: 'Lubed Gateron Oil Kings', keycaps: 'GMK Dracula', mount: "Gasket", photo:addProd(isProd,"/qk.jpg") }]
+const boards = [{ name: 'Clay Derivative', designer: "jjw", switches: 'Lubed Cherry Nixies with 62g springs', keycaps: 'GMK Earth Tones', mount: "O-Ring", photo:"/derivative.jpg" },
+{ name: 'Navy Onyx FRL TKL', designer: 'funderbunker', switches: 'Lubed Gateron Cream Sodas', keycaps: 'GMK Stargaze', mount: "Gasket", photo:"/onyx.jpg" },
+{ name: 'Dolice', designer: 'TGR x LinWorks', switches: 'Broken in + Lubed Cherry Nixies with 62g springs ', keycaps: 'GMK Rainy Day', mount: "Sandwich", photo:"/dolice.jpg" },
+{ name: 'QK65', designer: 'qwertykeys', switches: 'Lubed Gateron Oil Kings', keycaps: 'GMK Dracula', mount: "Gasket",photo:"/qk.jpg"}]
 
 export default function Keyboards() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);

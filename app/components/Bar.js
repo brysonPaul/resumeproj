@@ -9,7 +9,6 @@ import "../styles.css";
 
 
 export default function Bar() {
-  const isProd = process.env.NODE_ENV === 'production';
   return (
     <Navbar isBordered isBlurred={false} variant="sticky" style={{ width: "100%", backgroundColor: "" }}>
       <NavbarContent style={{ width: "1%", display: "flex", justifyContent: "space-around", flexGrow: 1, gap:75 }}>
@@ -45,7 +44,7 @@ export default function Bar() {
         <a className="icon-links flex flex-col" href="https://www.linkedin.com/in/bryson-paul/">
           <FontAwesomeIcon icon={faLinkedinIn} title="View my LinkedIn"/>
         </a>
-        <a className="icon-links flex flex-col" href={(isProd?"/resumeproj":" ")+"/Resume.pdf"} target="_blank" rel="noopener noreferrer">
+        <a className="icon-links flex flex-col" href={"/Resume.pdf"} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFile} title="View my Resume"/>
         </a>
         <a className="icon-links" href="mailto:brysonpaul1870@gmail.com" target="_blank" rel="noopener noreferrer" type="application/pdf">
