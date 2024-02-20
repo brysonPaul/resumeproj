@@ -4,6 +4,7 @@ import "../styles.css"; // Import your CSS file
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
+import Link from "next/link";
 
 const isProd = process.env.NODE_ENV === 'production';
 function addProd(isProd, src) {
@@ -28,7 +29,7 @@ export default function Keyboards() {
       <div className="embla" ref={emblaRef} style={{ display: "flex", justifyContent: "center" }}>
         <div className="embla__container">
           {boards.map((item, index) => (
-            <div key={index} className="embla__slide">
+             <Link href='/keyboards/viewBoard?data=' className="embla__slide" key={index}>
               <Image
                 className="keeb-photo"
                 src={item.photo}
@@ -36,8 +37,8 @@ export default function Keyboards() {
                 width={400}
                 height={400}
               />
-              {item.name}
-            </div>
+           </Link>
+           
           ))}
         </div>
       </div>
