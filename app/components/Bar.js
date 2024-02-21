@@ -3,7 +3,7 @@ import { Navbar, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faE, faFile } from "@fortawesome/free-solid-svg-icons";
+import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "../styles.css";
 
@@ -13,27 +13,27 @@ export default function Bar() {
     <Navbar isBordered isBlurred={false} variant="sticky" style={{ width: "100%", backgroundColor: "" }}>
       <NavbarContent style={{ width: "1%", display: "flex", justifyContent: "space-around", flexGrow: 1, gap:75 }}>
         <NavbarItem>
-          <Link color="foreground" href= {"/"} size="lg" >
-            
+          <Link color="foreground" href= "/" size="lg" >
+            Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="about" size="lg">
+          <Link color="foreground" href="/about" size="lg">
             About Me
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="experiences" size="lg">
+          <Link color="foreground" href="/experiences" size="lg">
             Experiences
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="projects" size="lg">
+          <Link color="foreground" href="/projects" size="lg">
             Projects
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="keyboards" size="lg">
+          <Link color="foreground" href="/keyboards" size="lg">
             Keyboards
           </Link>
         </NavbarItem>
