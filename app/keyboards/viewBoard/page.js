@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import "../../styles.css";
 import { Link } from "@nextui-org/react";
 import { SpinningCircles } from "react-loading-icons";
@@ -12,10 +12,10 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function ViewBoard() {
-  const boards = [{ name: 'Clay Derivative', designer: "jjw", switches: 'Lubed Cherry Nixies with 62g springs', keycaps: 'GMK Earth Tones', mount: "O-Ring", photo: "/derivative.jpg" },
+  const boards =  useMemo([{ name: 'Clay Derivative', designer: "jjw", switches: 'Lubed Cherry Nixies with 62g springs', keycaps: 'GMK Earth Tones', mount: "O-Ring", photo: "/derivative.jpg" },
   { name: 'Navy Onyx FRL TKL', designer: 'funderbunker', switches: 'Lubed Gateron Cream Sodas', keycaps: 'GMK Stargaze', mount: "Gasket", photo: "/onyx.jpg" },
   { name: 'Dolice', designer: 'TGR x LinWorks', switches: 'Broken in + Lubed Cherry Nixies with 62g springs ', keycaps: 'GMK Rainy Day', mount: "Sandwich", photo: "/dolice.jpg" },
-  { name: 'QK65', designer: 'qwertykeys', switches: 'Lubed Gateron Oil Kings', keycaps: 'GMK Dracula', mount: "Gasket", photo: "/qk.jpg" }]
+  { name: 'QK65', designer: 'qwertykeys', switches: 'Lubed Gateron Oil Kings', keycaps: 'GMK Dracula', mount: "Gasket", photo: "/qk.jpg" }]);
   const [index, setIndex] = useState(-1);
   const [board, setBoard] = useState(boards[0]);
 
