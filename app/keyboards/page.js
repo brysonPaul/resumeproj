@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useCallback } from "react";
+import React, { useCallback } from "react";
 import "../styles.css"; // Import your CSS file
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from "embla-carousel-autoplay";
@@ -36,7 +36,7 @@ export default function Keyboards() {
     } else {
       embla.scrollTo(emblaRef.length - 1);
     }
-  }, [embla]);
+  }, [embla,emblaRef.length ]);
 
   return (
     <main style={{ display: 'grid', minHeight: "75vh", width: "100%" }}>
@@ -48,13 +48,13 @@ export default function Keyboards() {
       <div className="embla" ref={emblaRef} style={{ display: "flex", justifyContent: "center" }}>
         <div className="embla__container">
           {boards.map((item, index) => (
-            <div className="embla__slide" style={{ display: "flex", justifyContent: "center", alignItems: 'center' }}>
+            <div key={index} className="embla__slide" style={{ display: "flex", justifyContent: "center", alignItems: 'center' }}>
 
               <button style={{ padding: "50px", width: '25%', height: '25%', fontSize: '50px', display: 'flex', alignItems: 'flex-end', justifyContent: 'flex-end' }} onClick={prev}>
                 <FontAwesomeIcon icon={faArrowLeft}>
                 </FontAwesomeIcon>
               </button>
-              <Link key={index} href={`/keyboards/viewBoard`} onClick={() => { console.log(boards[index]); localStorage.setItem("index", index); console.log("set"); }}>
+              <Link key={index} href={`/keyboards/viewBoard`} onClick={() => { console.log(boards[index]); localStorage.setItem("index", index); console.log("set"); }} style={{ justifyContent: 'center', alignItems: 'center' }} >
                 <Image
                   className="keeb-photo"
                   src={item.photo}

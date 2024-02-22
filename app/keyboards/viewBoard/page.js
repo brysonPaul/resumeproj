@@ -29,16 +29,16 @@ export default function ViewBoard() {
     }, 1000); // Check every 1 second
 
     return () => clearInterval(intervalId);
-  }, [index]);
+  }, [index,boards]);
 
 
   return (
     <main style={{ minHeight: "100vh", display: 'flex', width: '100%' }}>
       {index != -1 ? (
         <div style={{ display: 'flex', width: '100%', flexDirection: 'column', alignItems: 'center' }}>
-          <Link color="foreground" href="/keyboards" size="lg" style={{ alignSelf: 'flex-start', padding:'1%', fontSize:'125%' }}>
-                <FontAwesomeIcon icon={faArrowLeft}>
-                </FontAwesomeIcon>
+          <Link color="foreground" href="/keyboards" size="lg" style={{ alignSelf: 'flex-start', padding: '1%', fontSize: '150%' }}>
+            <FontAwesomeIcon icon={faArrowLeft}>
+            </FontAwesomeIcon>
           </Link>
           <p className="title" style={{ alignSelf: 'flex-start' }}>{board.name}</p>
           <div style={{ display: 'flex', width: '100%', flexDirection: 'row', marginTop: '4%', marginLeft: '4%' }}>
@@ -50,6 +50,12 @@ export default function ViewBoard() {
               height={200}
               style={{ width: '60%' }}
             />
+            <div class="pgText" style={{ display: 'flex', flexDirection: 'column', padding: '2%', fontSize: '35px' }}>
+              <p>Designer: {board.designer}</p>
+              <p>Switches: {board.switches}</p>
+              <p>Mount: {board.mount}</p>
+              <p>Keycaps: {board.keycaps}</p>
+            </div>
             <div>
 
             </div>
