@@ -15,7 +15,11 @@
   .keeb-photo {
     border-radius: 100px;
     max-width: 100%;
-    width:90%;
+    width:100%;
+    scale: .9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .footertext {
@@ -43,6 +47,13 @@
     align-items: center;
     width: 25px;
   }
+
+  .icon-links-projects {
+    /* color: lightskyblue; */
+    font-size: 25px;
+    justify-content: flex-start;
+    align-items: center ;
+  }
   
   .title {
     font-size: 500%;
@@ -50,6 +61,21 @@
     margin-left: 5%;
     margin-top: 2%;
     font-style: normal;
+  }
+
+  .ptitle {
+    font-size: 150%;
+    font-weight: 100;
+    width: 30%;
+  }
+
+  .ptitleDate {
+    font-size: 150%;
+    font-weight: 100;
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+    text-align: end;
   }
 
   .soloText {
@@ -93,4 +119,19 @@
 
   .main {
     flex: flex-grow;
+  }
+
+  .chip-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-items: flex-end;
+    gap: 0.7%;
+    padding: 1%;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }

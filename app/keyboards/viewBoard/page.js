@@ -12,10 +12,10 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function ViewBoard() {
-  const boards =  useMemo([{ name: 'Clay Derivative', designer: "jjw", switches: 'Lubed Cherry Nixies with 62g springs', keycaps: 'GMK Earth Tones', mount: "O-Ring", photo: "/derivative.jpg" },
+  const boards =  [{ name: 'Clay Derivative', designer: "jjw", switches: 'Lubed Cherry Nixies with 62g springs', keycaps: 'GMK Earth Tones', mount: "O-Ring", photo: "/derivative.jpg" },
   { name: 'Navy Onyx FRL TKL', designer: 'funderbunker', switches: 'Lubed Gateron Cream Sodas', keycaps: 'GMK Stargaze', mount: "Gasket", photo: "/onyx.jpg" },
   { name: 'Dolice', designer: 'TGR x LinWorks', switches: 'Broken in + Lubed Cherry Nixies with 62g springs ', keycaps: 'GMK Rainy Day', mount: "Sandwich", photo: "/dolice.jpg" },
-  { name: 'QK65', designer: 'qwertykeys', switches: 'Lubed Gateron Oil Kings', keycaps: 'GMK Dracula', mount: "Gasket", photo: "/qk.jpg" }]);
+  { name: 'QK65', designer: 'qwertykeys', switches: 'Lubed Gateron Oil Kings', keycaps: 'GMK Dracula', mount: "Gasket", photo: "/qk.jpg" }];
   const [index, setIndex] = useState(-1);
   const [board, setBoard] = useState(boards[0]);
 
@@ -41,7 +41,7 @@ export default function ViewBoard() {
             </FontAwesomeIcon>
           </Link>
           <p className="title" style={{ alignSelf: 'flex-start' }}>{board.name}</p>
-          <div style={{ display: 'flex', width: '100%', flexDirection: 'row', marginTop: '4%', marginLeft: '4%' }}>
+          <div style={{ display: 'flex', width: '100%', flexDirection: 'row', padding:'4%' }}>
             <Image
               className="keeb-photo"
               src={board.photo}
@@ -50,7 +50,7 @@ export default function ViewBoard() {
               height={200}
               style={{ width: '60%' }}
             />
-            <div class="pgText" style={{ display: 'flex', flexDirection: 'column', padding: '2%', fontSize: '35px' }}>
+            <div class="pgText" style={{ display: 'flex', flexDirection: 'column', padding: '4%', fontSize: '35px' }}>
               <p>Designer: {board.designer}</p>
               <p>Switches: {board.switches}</p>
               <p>Mount: {board.mount}</p>
