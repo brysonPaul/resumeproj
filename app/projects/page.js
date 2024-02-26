@@ -8,7 +8,7 @@ const projects = [
         description: "Created a responsive resume website for people interested to know a bit more about me and ways to contact ( thanks again for visiting )! ",
         technologies: "Javascript,React,NextJS,Tailwind CSS,NextUI",
         link: "https://brysonpaul.com/",
-        images: ["/projects/about-me.jpg","/projects/keyboards.jpg"],
+        images: ["/projects/about-me.jpg","/projects/keyboards.JPG"],
 
     },
     {
@@ -19,7 +19,7 @@ const projects = [
         technologies: "Javascript,React-Native/React,AWS Lambda,PostgresSQL,Android Studio,Jira,Confluence",
         link: "https://www.ucf.edu/news/ucf-students-support-u-s-military-with-new-technology/",
         app: 'https://apps.apple.com/us/app/army-reserve-mercury/id1619569471',
-        images: ["/projects/pm-1.jpg","/projects/pm-2.png","/projects/pm-3.png"],
+        images: ["/projects/pm-1.JPG","/projects/pm-2.PNG","/projects/pm-3.PNG"],
         
 
     },
@@ -49,7 +49,7 @@ const projects = [
         technologies: "Python,SpotDL,Spotify API",
         github: "https://github.com/maximusmith529/Saberfy",
         devpost: "https://devpost.com/software/saberfy",
-        images: ["/projects/sfy-1.jpg","/projects/sfy-2.jpg"],
+        images: ["/projects/sfy-1.jpg","/projects/sfy-2.JPG"],
     }];
 
 export default function Projects() {
