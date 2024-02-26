@@ -101,7 +101,29 @@
     flex: 0 0 100%;
     min-width: 0;
     display: flex;
-    justify-content: center;
+  }
+  .embla__container_project {
+    display: flex;
+  }
+  .embla__slide_project {
+    /* Fixed height for the slide */
+    /* height: 500px; */
+    flex-direction: row;
+    display: flex;
+    /* Center content vertically and horizontally */
+    flex: 0 0 100%;
+    justify-items: flex-end;
+    align-items: center;
+  }
+  
+  .embla__slide_project img {
+    /* Scale down proportionally while maintaining aspect ratio */
+    max-width: 100%;
+    height: 550px;
+    border-radius: 10%;
+  
+    /* Object-fit for additional control (optional) */
+    object-fit: contain /* Replace with "contain" if desired */
   }
   
   .pgText {
@@ -129,6 +151,8 @@
     gap: 0.7%;
     padding: 1%;
     animation: fadeIn 0.5s ease-in-out forwards;
+    
+    flex-grow: 1;
   }
   
   @keyframes fadeIn {
