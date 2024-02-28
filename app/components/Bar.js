@@ -23,11 +23,6 @@ export default function Bar() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/experiences" size="lg">
-            Experiences
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
           <Link color="foreground" href="/projects" size="lg">
             Projects
           </Link>
@@ -35,6 +30,11 @@ export default function Bar() {
         <NavbarItem>
           <Link color="foreground" href="/keyboards" size="lg">
             Keyboards
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/keyboards" size="lg">
+            Gallery
           </Link>
         </NavbarItem>
       </NavbarContent>

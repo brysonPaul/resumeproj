@@ -46,7 +46,7 @@ const projects = [
         date: "08/2022",
         description: "Developed an CLI application during ShellHacks 2022 that analyzes music from Spotify and generates Beat Saber maps based on the beat, tempo and song structure.",
         awards: "Second Place Shellhacks 2022, Best First Time Hackers",
-        technologies: "Python,SpotDL,Spotify API",
+        technologies: "Python,SpotDL,Spotify API,FFMPEG",
         github: "https://github.com/maximusmith529/Saberfy",
         devpost: "https://devpost.com/software/saberfy",
         images: ["/projects/sfy-1.jpg","/projects/sfy-2.JPG"],
